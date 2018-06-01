@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0199A96965E3863E69B16211 /* Pods_JFImageDeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE90899F1C463918946B2AB /* Pods_JFImageDeal.framework */; };
+		A6BA378C20C0E8AE00731306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA378B20C0E8AE00731306 /* AppDelegate.m */; };
+		A6BA378F20C0E8AE00731306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA378E20C0E8AE00731306 /* ViewController.m */; };
+		A6BA379220C0E8AE00731306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BA379020C0E8AE00731306 /* Main.storyboard */; };
+		A6BA379520C0E8AE00731306 /* JFImageDeal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6BA379320C0E8AE00731306 /* JFImageDeal.xcdatamodeld */; };
+		A6BA379720C0E8B000731306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BA379620C0E8B000731306 /* Assets.xcassets */; };
+		A6BA379A20C0E8B000731306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BA379820C0E8B000731306 /* LaunchScreen.storyboard */; };
+		A6BA379D20C0E8B000731306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA379C20C0E8B000731306 /* main.m */; };
+		A6BA37A720C0E8B000731306 /* JFImageDealTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37A620C0E8B000731306 /* JFImageDealTests.m */; };
+		A6BA37B220C0E8B000731306 /* JFImageDealUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37B120C0E8B000731306 /* JFImageDealUITests.m */; };
+		A6BA37C120C0EDC100731306 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37C020C0EDC100731306 /* JFBaseViewController.m */; };
+		A6BA37C420C0EEB500731306 /* JFTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37C320C0EEB500731306 /* JFTopicViewController.m */; };
+		A6BA37C720C0EEC100731306 /* JFHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37C620C0EEC100731306 /* JFHotViewController.m */; };
+		A6BA37CA20C0EECA00731306 /* JFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37C920C0EECA00731306 /* JFMineViewController.m */; };
+		A6BA37D120C1069200731306 /* JFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37D020C1069200731306 /* JFTabBarViewController.m */; };
+		A6BA37D520C106EE00731306 /* JFTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37D420C106EE00731306 /* JFTabBarItem.m */; };
+		A6BA37D820C1074B00731306 /* JFBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37D720C1074B00731306 /* JFBubbleView.m */; };
+		A6BA37DC20C1098F00731306 /* JFGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37DB20C1098F00731306 /* JFGlobalConfig.m */; };
+		A6BA37E020C10B2F00731306 /* JFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37DF20C10B2F00731306 /* JFNavigationController.m */; };
+		A6BA37E320C10D0100731306 /* JFCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37E220C10D0100731306 /* JFCommonUtils.m */; };
+		A6BA37E720C1155300731306 /* JFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37E620C1155300731306 /* JFCollectionViewCell.m */; };
+		A6BA37EB20C12D2400731306 /* JFTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37EA20C12D2400731306 /* JFTopicModel.m */; };
+		A6BA37EE20C12FA600731306 /* JFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37ED20C12FA600731306 /* JFDetailViewController.m */; };
+		A6BA37F120C1308D00731306 /* JFSubTopicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37F020C1308D00731306 /* JFSubTopicScrollView.m */; };
+		A6BA37F720C131E200731306 /* JFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37F620C131E200731306 /* JFLabel.m */; };
+		A6BA37FA20C13ADC00731306 /* JFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37F920C13ADC00731306 /* JFButton.m */; };
+		A6BA37FD20C1547100731306 /* JFDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37FC20C1547100731306 /* JFDetailCell.m */; };
+		A6BA380020C1634D00731306 /* JFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA37FF20C1634D00731306 /* JFScrollView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6BA37A320C0E8B000731306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6BA377F20C0E8AE00731306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6BA378620C0E8AE00731306;
+			remoteInfo = JFImageDeal;
+		};
+		A6BA37AE20C0E8B000731306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6BA377F20C0E8AE00731306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6BA378620C0E8AE00731306;
+			remoteInfo = JFImageDeal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		198E87E39BE8E56519DC4B61 /* Pods-JFImageDeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFImageDeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFImageDeal/Pods-JFImageDeal.debug.xcconfig"; sourceTree = "<group>"; };
+		A6BA378720C0E8AE00731306 /* JFImageDeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFImageDeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BA378A20C0E8AE00731306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6BA378B20C0E8AE00731306 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6BA378D20C0E8AE00731306 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A6BA378E20C0E8AE00731306 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6BA379120C0E8AE00731306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6BA379420C0E8AE00731306 /* JFImageDeal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JFImageDeal.xcdatamodel; sourceTree = "<group>"; };
+		A6BA379620C0E8B000731306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6BA379920C0E8B000731306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6BA379B20C0E8B000731306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BA379C20C0E8B000731306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6BA37A220C0E8B000731306 /* JFImageDealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFImageDealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BA37A620C0E8B000731306 /* JFImageDealTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFImageDealTests.m; sourceTree = "<group>"; };
+		A6BA37A820C0E8B000731306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BA37AD20C0E8B000731306 /* JFImageDealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFImageDealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BA37B120C0E8B000731306 /* JFImageDealUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFImageDealUITests.m; sourceTree = "<group>"; };
+		A6BA37B320C0E8B000731306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BA37BF20C0EDC100731306 /* JFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFBaseViewController.h; sourceTree = "<group>"; };
+		A6BA37C020C0EDC100731306 /* JFBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFBaseViewController.m; sourceTree = "<group>"; };
+		A6BA37C220C0EEB500731306 /* JFTopicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTopicViewController.h; sourceTree = "<group>"; };
+		A6BA37C320C0EEB500731306 /* JFTopicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTopicViewController.m; sourceTree = "<group>"; };
+		A6BA37C520C0EEC100731306 /* JFHotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFHotViewController.h; sourceTree = "<group>"; };
+		A6BA37C620C0EEC100731306 /* JFHotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFHotViewController.m; sourceTree = "<group>"; };
+		A6BA37C820C0EECA00731306 /* JFMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFMineViewController.h; sourceTree = "<group>"; };
+		A6BA37C920C0EECA00731306 /* JFMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFMineViewController.m; sourceTree = "<group>"; };
+		A6BA37CE20C0EF5200731306 /* JFHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFHeader.h; sourceTree = "<group>"; };
+		A6BA37CF20C1069200731306 /* JFTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTabBarViewController.h; sourceTree = "<group>"; };
+		A6BA37D020C1069200731306 /* JFTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTabBarViewController.m; sourceTree = "<group>"; };
+		A6BA37D320C106EE00731306 /* JFTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTabBarItem.h; sourceTree = "<group>"; };
+		A6BA37D420C106EE00731306 /* JFTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTabBarItem.m; sourceTree = "<group>"; };
+		A6BA37D620C1074B00731306 /* JFBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFBubbleView.h; sourceTree = "<group>"; };
+		A6BA37D720C1074B00731306 /* JFBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFBubbleView.m; sourceTree = "<group>"; };
+		A6BA37DA20C1098F00731306 /* JFGlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFGlobalConfig.h; sourceTree = "<group>"; };
+		A6BA37DB20C1098F00731306 /* JFGlobalConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFGlobalConfig.m; sourceTree = "<group>"; };
+		A6BA37DE20C10B2F00731306 /* JFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFNavigationController.h; sourceTree = "<group>"; };
+		A6BA37DF20C10B2F00731306 /* JFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNavigationController.m; sourceTree = "<group>"; };
+		A6BA37E120C10D0100731306 /* JFCommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFCommonUtils.h; sourceTree = "<group>"; };
+		A6BA37E220C10D0100731306 /* JFCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFCommonUtils.m; sourceTree = "<group>"; };
+		A6BA37E520C1155300731306 /* JFCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFCollectionViewCell.h; sourceTree = "<group>"; };
+		A6BA37E620C1155300731306 /* JFCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFCollectionViewCell.m; sourceTree = "<group>"; };
+		A6BA37E920C12D2400731306 /* JFTopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTopicModel.h; sourceTree = "<group>"; };
+		A6BA37EA20C12D2400731306 /* JFTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTopicModel.m; sourceTree = "<group>"; };
+		A6BA37EC20C12FA600731306 /* JFDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFDetailViewController.h; sourceTree = "<group>"; };
+		A6BA37ED20C12FA600731306 /* JFDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFDetailViewController.m; sourceTree = "<group>"; };
+		A6BA37EF20C1308D00731306 /* JFSubTopicScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFSubTopicScrollView.h; sourceTree = "<group>"; };
+		A6BA37F020C1308D00731306 /* JFSubTopicScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFSubTopicScrollView.m; sourceTree = "<group>"; };
+		A6BA37F520C131E200731306 /* JFLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFLabel.h; sourceTree = "<group>"; };
+		A6BA37F620C131E200731306 /* JFLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFLabel.m; sourceTree = "<group>"; };
+		A6BA37F820C13ADC00731306 /* JFButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFButton.h; sourceTree = "<group>"; };
+		A6BA37F920C13ADC00731306 /* JFButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFButton.m; sourceTree = "<group>"; };
+		A6BA37FB20C1547100731306 /* JFDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFDetailCell.h; sourceTree = "<group>"; };
+		A6BA37FC20C1547100731306 /* JFDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFDetailCell.m; sourceTree = "<group>"; };
+		A6BA37FE20C1634D00731306 /* JFScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFScrollView.h; sourceTree = "<group>"; };
+		A6BA37FF20C1634D00731306 /* JFScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFScrollView.m; sourceTree = "<group>"; };
+		EDE90899F1C463918946B2AB /* Pods_JFImageDeal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFImageDeal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB9F51BC17C31BE4389BE47 /* Pods-JFImageDeal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFImageDeal.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFImageDeal/Pods-JFImageDeal.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6BA378420C0E8AE00731306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0199A96965E3863E69B16211 /* Pods_JFImageDeal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA379F20C0E8B000731306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA37AA20C0E8B000731306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14DD97801099277445E4808E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				198E87E39BE8E56519DC4B61 /* Pods-JFImageDeal.debug.xcconfig */,
+				FFB9F51BC17C31BE4389BE47 /* Pods-JFImageDeal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6BA377E20C0E8AE00731306 = {
+			isa = PBXGroup;
+			children = (
+				A6BA378920C0E8AE00731306 /* JFImageDeal */,
+				A6BA37A520C0E8B000731306 /* JFImageDealTests */,
+				A6BA37B020C0E8B000731306 /* JFImageDealUITests */,
+				A6BA378820C0E8AE00731306 /* Products */,
+				14DD97801099277445E4808E /* Pods */,
+				D53C7E8BBDBB3AEF187B5D2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A6BA378820C0E8AE00731306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA378720C0E8AE00731306 /* JFImageDeal.app */,
+				A6BA37A220C0E8B000731306 /* JFImageDealTests.xctest */,
+				A6BA37AD20C0E8B000731306 /* JFImageDealUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6BA378920C0E8AE00731306 /* JFImageDeal */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37E820C12D0400731306 /* Model */,
+				A6BA37E420C1151C00731306 /* CustomUI */,
+				A6BA37DD20C10B0700731306 /* Navigation */,
+				A6BA37D920C1097E00731306 /* Config */,
+				A6BA37D220C106BC00731306 /* Tabbar */,
+				A6BA37CD20C0EEDD00731306 /* Topic */,
+				A6BA37CC20C0EED800731306 /* Hot */,
+				A6BA37CB20C0EED100731306 /* Mine */,
+				A6BA378A20C0E8AE00731306 /* AppDelegate.h */,
+				A6BA378B20C0E8AE00731306 /* AppDelegate.m */,
+				A6BA378D20C0E8AE00731306 /* ViewController.h */,
+				A6BA378E20C0E8AE00731306 /* ViewController.m */,
+				A6BA379020C0E8AE00731306 /* Main.storyboard */,
+				A6BA379620C0E8B000731306 /* Assets.xcassets */,
+				A6BA379820C0E8B000731306 /* LaunchScreen.storyboard */,
+				A6BA379B20C0E8B000731306 /* Info.plist */,
+				A6BA379C20C0E8B000731306 /* main.m */,
+				A6BA379320C0E8AE00731306 /* JFImageDeal.xcdatamodeld */,
+				A6BA37BF20C0EDC100731306 /* JFBaseViewController.h */,
+				A6BA37C020C0EDC100731306 /* JFBaseViewController.m */,
+				A6BA37CE20C0EF5200731306 /* JFHeader.h */,
+			);
+			path = JFImageDeal;
+			sourceTree = "<group>";
+		};
+		A6BA37A520C0E8B000731306 /* JFImageDealTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37A620C0E8B000731306 /* JFImageDealTests.m */,
+				A6BA37A820C0E8B000731306 /* Info.plist */,
+			);
+			path = JFImageDealTests;
+			sourceTree = "<group>";
+		};
+		A6BA37B020C0E8B000731306 /* JFImageDealUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37B120C0E8B000731306 /* JFImageDealUITests.m */,
+				A6BA37B320C0E8B000731306 /* Info.plist */,
+			);
+			path = JFImageDealUITests;
+			sourceTree = "<group>";
+		};
+		A6BA37CB20C0EED100731306 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37C820C0EECA00731306 /* JFMineViewController.h */,
+				A6BA37C920C0EECA00731306 /* JFMineViewController.m */,
+			);
+			name = Mine;
+			path = topic;
+			sourceTree = "<group>";
+		};
+		A6BA37CC20C0EED800731306 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37C520C0EEC100731306 /* JFHotViewController.h */,
+				A6BA37C620C0EEC100731306 /* JFHotViewController.m */,
+			);
+			name = Hot;
+			path = mine;
+			sourceTree = "<group>";
+		};
+		A6BA37CD20C0EEDD00731306 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37C220C0EEB500731306 /* JFTopicViewController.h */,
+				A6BA37C320C0EEB500731306 /* JFTopicViewController.m */,
+				A6BA37EC20C12FA600731306 /* JFDetailViewController.h */,
+				A6BA37ED20C12FA600731306 /* JFDetailViewController.m */,
+				A6BA37EF20C1308D00731306 /* JFSubTopicScrollView.h */,
+				A6BA37F020C1308D00731306 /* JFSubTopicScrollView.m */,
+			);
+			name = Topic;
+			path = hot;
+			sourceTree = "<group>";
+		};
+		A6BA37D220C106BC00731306 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37CF20C1069200731306 /* JFTabBarViewController.h */,
+				A6BA37D020C1069200731306 /* JFTabBarViewController.m */,
+				A6BA37D320C106EE00731306 /* JFTabBarItem.h */,
+				A6BA37D420C106EE00731306 /* JFTabBarItem.m */,
+				A6BA37D620C1074B00731306 /* JFBubbleView.h */,
+				A6BA37D720C1074B00731306 /* JFBubbleView.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		A6BA37D920C1097E00731306 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37DA20C1098F00731306 /* JFGlobalConfig.h */,
+				A6BA37DB20C1098F00731306 /* JFGlobalConfig.m */,
+				A6BA37E120C10D0100731306 /* JFCommonUtils.h */,
+				A6BA37E220C10D0100731306 /* JFCommonUtils.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A6BA37DD20C10B0700731306 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37DE20C10B2F00731306 /* JFNavigationController.h */,
+				A6BA37DF20C10B2F00731306 /* JFNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A6BA37E420C1151C00731306 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37E520C1155300731306 /* JFCollectionViewCell.h */,
+				A6BA37E620C1155300731306 /* JFCollectionViewCell.m */,
+				A6BA37F520C131E200731306 /* JFLabel.h */,
+				A6BA37F620C131E200731306 /* JFLabel.m */,
+				A6BA37F820C13ADC00731306 /* JFButton.h */,
+				A6BA37F920C13ADC00731306 /* JFButton.m */,
+				A6BA37FB20C1547100731306 /* JFDetailCell.h */,
+				A6BA37FC20C1547100731306 /* JFDetailCell.m */,
+				A6BA37FE20C1634D00731306 /* JFScrollView.h */,
+				A6BA37FF20C1634D00731306 /* JFScrollView.m */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		A6BA37E820C12D0400731306 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA37E920C12D2400731306 /* JFTopicModel.h */,
+				A6BA37EA20C12D2400731306 /* JFTopicModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D53C7E8BBDBB3AEF187B5D2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDE90899F1C463918946B2AB /* Pods_JFImageDeal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6BA378620C0E8AE00731306 /* JFImageDeal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BA37B620C0E8B000731306 /* Build configuration list for PBXNativeTarget "JFImageDeal" */;
+			buildPhases = (
+				D5E6A27EC03CBCA7E97A7178 /* [CP] Check Pods Manifest.lock */,
+				A6BA378320C0E8AE00731306 /* Sources */,
+				A6BA378420C0E8AE00731306 /* Frameworks */,
+				A6BA378520C0E8AE00731306 /* Resources */,
+				39DE9E951D880157374195D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFImageDeal;
+			productName = JFImageDeal;
+			productReference = A6BA378720C0E8AE00731306 /* JFImageDeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6BA37A120C0E8B000731306 /* JFImageDealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BA37B920C0E8B000731306 /* Build configuration list for PBXNativeTarget "JFImageDealTests" */;
+			buildPhases = (
+				A6BA379E20C0E8B000731306 /* Sources */,
+				A6BA379F20C0E8B000731306 /* Frameworks */,
+				A6BA37A020C0E8B000731306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6BA37A420C0E8B000731306 /* PBXTargetDependency */,
+			);
+			name = JFImageDealTests;
+			productName = JFImageDealTests;
+			productReference = A6BA37A220C0E8B000731306 /* JFImageDealTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6BA37AC20C0E8B000731306 /* JFImageDealUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BA37BC20C0E8B000731306 /* Build configuration list for PBXNativeTarget "JFImageDealUITests" */;
+			buildPhases = (
+				A6BA37A920C0E8B000731306 /* Sources */,
+				A6BA37AA20C0E8B000731306 /* Frameworks */,
+				A6BA37AB20C0E8B000731306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6BA37AF20C0E8B000731306 /* PBXTargetDependency */,
+			);
+			name = JFImageDealUITests;
+			productName = JFImageDealUITests;
+			productReference = A6BA37AD20C0E8B000731306 /* JFImageDealUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6BA377F20C0E8AE00731306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = huangpengfei;
+				TargetAttributes = {
+					A6BA378620C0E8AE00731306 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					A6BA37A120C0E8B000731306 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = A6BA378620C0E8AE00731306;
+					};
+					A6BA37AC20C0E8B000731306 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = A6BA378620C0E8AE00731306;
+					};
+				};
+			};
+			buildConfigurationList = A6BA378220C0E8AE00731306 /* Build configuration list for PBXProject "JFImageDeal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6BA377E20C0E8AE00731306;
+			productRefGroup = A6BA378820C0E8AE00731306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6BA378620C0E8AE00731306 /* JFImageDeal */,
+				A6BA37A120C0E8B000731306 /* JFImageDealTests */,
+				A6BA37AC20C0E8B000731306 /* JFImageDealUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6BA378520C0E8AE00731306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA379A20C0E8B000731306 /* LaunchScreen.storyboard in Resources */,
+				A6BA379720C0E8B000731306 /* Assets.xcassets in Resources */,
+				A6BA379220C0E8AE00731306 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA37A020C0E8B000731306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA37AB20C0E8B000731306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39DE9E951D880157374195D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JFImageDeal/Pods-JFImageDeal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFImageDeal/Pods-JFImageDeal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E6A27EC03CBCA7E97A7178 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFImageDeal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6BA378320C0E8AE00731306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA37C420C0EEB500731306 /* JFTopicViewController.m in Sources */,
+				A6BA380020C1634D00731306 /* JFScrollView.m in Sources */,
+				A6BA37CA20C0EECA00731306 /* JFMineViewController.m in Sources */,
+				A6BA37EE20C12FA600731306 /* JFDetailViewController.m in Sources */,
+				A6BA37DC20C1098F00731306 /* JFGlobalConfig.m in Sources */,
+				A6BA37F120C1308D00731306 /* JFSubTopicScrollView.m in Sources */,
+				A6BA37FA20C13ADC00731306 /* JFButton.m in Sources */,
+				A6BA37C720C0EEC100731306 /* JFHotViewController.m in Sources */,
+				A6BA37FD20C1547100731306 /* JFDetailCell.m in Sources */,
+				A6BA37E320C10D0100731306 /* JFCommonUtils.m in Sources */,
+				A6BA379520C0E8AE00731306 /* JFImageDeal.xcdatamodeld in Sources */,
+				A6BA378F20C0E8AE00731306 /* ViewController.m in Sources */,
+				A6BA379D20C0E8B000731306 /* main.m in Sources */,
+				A6BA37D520C106EE00731306 /* JFTabBarItem.m in Sources */,
+				A6BA37EB20C12D2400731306 /* JFTopicModel.m in Sources */,
+				A6BA37C120C0EDC100731306 /* JFBaseViewController.m in Sources */,
+				A6BA378C20C0E8AE00731306 /* AppDelegate.m in Sources */,
+				A6BA37D820C1074B00731306 /* JFBubbleView.m in Sources */,
+				A6BA37E020C10B2F00731306 /* JFNavigationController.m in Sources */,
+				A6BA37F720C131E200731306 /* JFLabel.m in Sources */,
+				A6BA37D120C1069200731306 /* JFTabBarViewController.m in Sources */,
+				A6BA37E720C1155300731306 /* JFCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA379E20C0E8B000731306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA37A720C0E8B000731306 /* JFImageDealTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA37A920C0E8B000731306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA37B220C0E8B000731306 /* JFImageDealUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6BA37A420C0E8B000731306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6BA378620C0E8AE00731306 /* JFImageDeal */;
+			targetProxy = A6BA37A320C0E8B000731306 /* PBXContainerItemProxy */;
+		};
+		A6BA37AF20C0E8B000731306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6BA378620C0E8AE00731306 /* JFImageDeal */;
+			targetProxy = A6BA37AE20C0E8B000731306 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6BA379020C0E8AE00731306 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6BA379120C0E8AE00731306 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6BA379820C0E8B000731306 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6BA379920C0E8B000731306 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6BA37B420C0E8B000731306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6BA37B520C0E8B000731306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6BA37B720C0E8B000731306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198E87E39BE8E56519DC4B61 /* Pods-JFImageDeal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9GN7A92DK;
+				INFOPLIST_FILE = JFImageDeal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JFImageDeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6BA37B820C0E8B000731306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB9F51BC17C31BE4389BE47 /* Pods-JFImageDeal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9GN7A92DK;
+				INFOPLIST_FILE = JFImageDeal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JFImageDeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6BA37BA20C0E8B000731306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9GN7A92DK;
+				INFOPLIST_FILE = JFImageDealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JFImageDealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFImageDeal.app/JFImageDeal";
+			};
+			name = Debug;
+		};
+		A6BA37BB20C0E8B000731306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9GN7A92DK;
+				INFOPLIST_FILE = JFImageDealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JFImageDealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFImageDeal.app/JFImageDeal";
+			};
+			name = Release;
+		};
+		A6BA37BD20C0E8B000731306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9GN7A92DK;
+				INFOPLIST_FILE = JFImageDealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JFImageDealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFImageDeal;
+			};
+			name = Debug;
+		};
+		A6BA37BE20C0E8B000731306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9GN7A92DK;
+				INFOPLIST_FILE = JFImageDealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JFImageDealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFImageDeal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6BA378220C0E8AE00731306 /* Build configuration list for PBXProject "JFImageDeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BA37B420C0E8B000731306 /* Debug */,
+				A6BA37B520C0E8B000731306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BA37B620C0E8B000731306 /* Build configuration list for PBXNativeTarget "JFImageDeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BA37B720C0E8B000731306 /* Debug */,
+				A6BA37B820C0E8B000731306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BA37B920C0E8B000731306 /* Build configuration list for PBXNativeTarget "JFImageDealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BA37BA20C0E8B000731306 /* Debug */,
+				A6BA37BB20C0E8B000731306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BA37BC20C0E8B000731306 /* Build configuration list for PBXNativeTarget "JFImageDealUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BA37BD20C0E8B000731306 /* Debug */,
+				A6BA37BE20C0E8B000731306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6BA379320C0E8AE00731306 /* JFImageDeal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6BA379420C0E8AE00731306 /* JFImageDeal.xcdatamodel */,
+			);
+			currentVersion = A6BA379420C0E8AE00731306 /* JFImageDeal.xcdatamodel */;
+			path = JFImageDeal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6BA377F20C0E8AE00731306 /* Project object */;
+}

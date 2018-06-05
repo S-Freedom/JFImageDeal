@@ -7,4 +7,6 @@ pod "AFNetworking"
 pod "MJExtension"
 pod "MJRefresh"
 pod "Masonry"
+pod "YYKit"
+pod "FreeStreamer"
 end

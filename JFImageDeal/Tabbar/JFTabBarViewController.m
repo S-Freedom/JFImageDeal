@@ -13,6 +13,8 @@
 #import "JFTopicViewController.h"
 #import "JFMineViewController.h"
 #import "JFHeader.h"
+#import "JFDetailViewController.h"
+#import "JFRecordViewController.h"
 @interface JFTabBarViewController ()
 {
     JFTabBarItem * _previousItem;//记录前一次选中的按钮
@@ -78,13 +80,17 @@
 {
     JFNavigationController * topicNavi = [[JFNavigationController alloc] initWithRootViewController:[[JFTopicViewController alloc] initWithNaviBar:NO backButton:NO]];
     
-    JFNavigationController * hotVC = [[JFNavigationController alloc] initWithRootViewController:[[JFHotViewController alloc] initWithNaviBar:NO backButton:NO]];
+    JFRecordViewController *hotVC = [[JFRecordViewController alloc] initWithNaviBar:NO backButton:NO];
+//    hotVC.isHot = YES;
+//    hotVC.titleArray = [@[@"最新",@"热搜"] copy];
     
-    JFNavigationController * mineVC = [[JFNavigationController alloc] initWithRootViewController:[[JFMineViewController alloc] initWithNaviBar:YES backButton:NO]];
+    JFNavigationController * hotNaviVC = [[JFNavigationController alloc] initWithRootViewController:hotVC];
     
-    self.viewControllers = @[topicNavi, hotVC, mineVC];
+    JFNavigationController * mineNaviVC = [[JFNavigationController alloc] initWithRootViewController:[[JFMineViewController alloc] initWithNaviBar:NO backButton:NO]];
     
-    titleArr = @[@"主题",@"推荐",@"我的"];
+    self.viewControllers = @[topicNavi, hotNaviVC, mineNaviVC];
+    
+    titleArr = @[@"专题",@"热搜",@"我的"];
     NSArray * normalImageArr = @[@"bg_Tabbar_Nearby_normal.png",
                                  @"bg_Tabbar_Chatroom_normal.png",
                                  @"bg_Tabbar_Message_normal.png"

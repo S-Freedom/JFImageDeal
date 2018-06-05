@@ -13,6 +13,7 @@
 #import "JFMineViewController.h"
 #import "JFTabBarViewController.h"
 #import "JFNavigationController.h"
+#import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
 
 @end
@@ -24,6 +25,10 @@
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kScreenH)];
     self.window.backgroundColor = [UIColor whiteColor];
    
+    NSError *error;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+    [[AVAudioSession sharedInstance] setActive:YES error:&error];
+    
     JFTabBarViewController *tabVC = [[JFTabBarViewController alloc] init];
     self.window.rootViewController = tabVC;
     [self.window makeKeyWindow];

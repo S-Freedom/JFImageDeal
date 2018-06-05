@@ -43,21 +43,36 @@
     CGFloat height = 40;
     CGFloat x = 0;
     CGFloat y = 0;
-    for (int i = 0; i<_subTitleArray.count; i++) {
-        NSString *title = _subTitleArray[i];
-        JFButton *btn = [JFButton createButtonWithTitle:title norColor:[UIColor blackColor] selectColor:nil hightLightColor:nil img:nil font:[UIFont systemFontOfSize:14.0f]];
-        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        btn.tag = i;
-        width = [JFCommonUtils returnSizeWithString:title font:btn.titleLabel.font size:CGSizeMake(100, 40)].width;
-        btn.frame = CGRectMake(x, y, width + 20, height);
-        [self addSubview:btn];
-        [self.btns addObject:btn];
-        x = CGRectGetMaxX(btn.frame) + 5;
+    
+    if(self.isHot && _subTitleArray.count == 2){
+        for (int i = 0; i<_subTitleArray.count; i++) {
+            NSString *title = _subTitleArray[i];
+            JFButton *btn = [JFButton createButtonWithTitle:title norColor:[UIColor blackColor] selectColor:nil hightLightColor:nil img:nil font:[UIFont systemFontOfSize:14.0f]];
+            [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+            btn.tag = i;
+            width = [JFCommonUtils returnSizeWithString:title font:btn.titleLabel.font size:CGSizeMake(100, 40)].width;
+            CGFloat margin = (i == 0) ? - (width + 20 + 2.5) : (2.5);
+            btn.frame = CGRectMake(kScreenW * 0.5 + margin, y, width + 20, height);
+            [self addSubview:btn];
+            [self.btns addObject:btn];
+            x = CGRectGetMaxX(btn.frame) + 5;
+        }
+        
+    }else{
+        for (int i = 0; i<_subTitleArray.count; i++) {
+            NSString *title = _subTitleArray[i];
+            JFButton *btn = [JFButton createButtonWithTitle:title norColor:[UIColor blackColor] selectColor:nil hightLightColor:nil img:nil font:[UIFont systemFontOfSize:14.0f]];
+            [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+            btn.tag = i;
+            width = [JFCommonUtils returnSizeWithString:title font:btn.titleLabel.font size:CGSizeMake(100, 40)].width;
+            btn.frame = CGRectMake(x, y, width + 20, height);
+            [self addSubview:btn];
+            [self.btns addObject:btn];
+            x = CGRectGetMaxX(btn.frame) + 5;
+        }
+        CGFloat maxW = x;
+        self.contentSize = CGSizeMake(maxW, 40);
     }
-    
-    CGFloat maxW = x;
-    self.contentSize = CGSizeMake(maxW, 40);
-    
     if(_subTitleArray.count > 0){
         JFButton *btn = self.btns.firstObject;
         [self changeBottomFrameWithFrame:btn.tag];

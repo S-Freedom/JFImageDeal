@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0199A96965E3863E69B16211 /* Pods_JFImageDeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE90899F1C463918946B2AB /* Pods_JFImageDeal.framework */; };
+		A64063F020C56A2100DAF646 /* JFRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64063EF20C56A2100DAF646 /* JFRecordViewController.m */; };
 		A6BA378C20C0E8AE00731306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA378B20C0E8AE00731306 /* AppDelegate.m */; };
 		A6BA378F20C0E8AE00731306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BA378E20C0E8AE00731306 /* ViewController.m */; };
 		A6BA379220C0E8AE00731306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BA379020C0E8AE00731306 /* Main.storyboard */; };
@@ -56,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		198E87E39BE8E56519DC4B61 /* Pods-JFImageDeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFImageDeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFImageDeal/Pods-JFImageDeal.debug.xcconfig"; sourceTree = "<group>"; };
+		A64063EE20C56A2100DAF646 /* JFRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRecordViewController.h; sourceTree = "<group>"; };
+		A64063EF20C56A2100DAF646 /* JFRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRecordViewController.m; sourceTree = "<group>"; };
 		A6BA378720C0E8AE00731306 /* JFImageDeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFImageDeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BA378A20C0E8AE00731306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6BA378B20C0E8AE00731306 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 			children = (
 				A6BA37C520C0EEC100731306 /* JFHotViewController.h */,
 				A6BA37C620C0EEC100731306 /* JFHotViewController.m */,
+				A64063EE20C56A2100DAF646 /* JFRecordViewController.h */,
+				A64063EF20C56A2100DAF646 /* JFRecordViewController.m */,
 			);
 			name = Hot;
 			path = mine;
@@ -454,18 +459,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JFImageDeal/Pods-JFImageDeal-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FreeStreamer/FreeStreamer.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreeStreamer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -510,6 +521,7 @@
 				A6BA379520C0E8AE00731306 /* JFImageDeal.xcdatamodeld in Sources */,
 				A6BA378F20C0E8AE00731306 /* ViewController.m in Sources */,
 				A6BA379D20C0E8B000731306 /* main.m in Sources */,
+				A64063F020C56A2100DAF646 /* JFRecordViewController.m in Sources */,
 				A6BA37D520C106EE00731306 /* JFTabBarItem.m in Sources */,
 				A6BA37EB20C12D2400731306 /* JFTopicModel.m in Sources */,
 				A6BA37C120C0EDC100731306 /* JFBaseViewController.m in Sources */,

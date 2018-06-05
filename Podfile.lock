@@ -14,35 +14,49 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - FreeStreamer (3.8.3):
+    - Reachability (~> 3.0)
   - Masonry (1.1.0)
   - MJExtension (3.0.15)
   - MJRefresh (3.1.15.3)
+  - Reachability (3.2)
   - SDWebImage (4.4.0):
     - SDWebImage/Core (= 4.4.0)
   - SDWebImage/Core (4.4.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
+  - FreeStreamer
   - Masonry
   - MJExtension
   - MJRefresh
   - SDWebImage
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - FreeStreamer
     - Masonry
     - MJExtension
     - MJRefresh
+    - Reachability
     - SDWebImage
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FreeStreamer: b205b0bf6a2e7855f935369145498f930eb27cac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 3f039575db1b135a20699ad298713b26acec1528
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: b534502786e43dde36dfcaee89356fe6df30e203
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: c1e8f7bbe5f816426940d1ed042d1801614f5d53
+PODFILE CHECKSUM: ae24e0601a54319b4e2310c9344828aa9729340a
 
 COCOAPODS: 1.5.3

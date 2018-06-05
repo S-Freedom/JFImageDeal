@@ -11,4 +11,5 @@
 @interface JFDetailViewController : JFBaseViewController
 @property (nonatomic ,copy) NSMutableArray *titleArray;
 @property (nonatomic ,copy) NSMutableArray *dataArray;
+@property (nonatomic, assign) BOOL isHot;
 @end

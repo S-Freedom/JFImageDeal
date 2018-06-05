@@ -18,6 +18,7 @@
 
 @property (nonatomic, copy) void (^scrollBlock)(NSInteger tag);
 @property (nonatomic, strong) NSMutableArray<JFButton *> *btns;
+@property (nonatomic, assign) BOOL isHot;
 - (void)changeBottomFrameWithFrame:(NSInteger)tag;
 - (void)btnClick:(UIButton *)sender;
 @end
